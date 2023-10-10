@@ -14,7 +14,7 @@ def grayscale(rgb):
     return np.dot(rgb[...,:3], [0.299, 0.587, 0.114])
 
 os.system('cls')
-file_name = 'FlpBp4hXwAITVU5.png'
+file_name = 'Image.png'  ### Input your Image
 img = cv2.imread(file_name)
 img = img[:,:,[2,1,0]]
 re_width = int(img.shape[1] * width_factor)
